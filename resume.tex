@@ -14,6 +14,12 @@
 \fontfamily{Georgia}
 \usepackage{fontawesome5}
 \usepackage{xcolor}
+\definecolor{link_color}{HTML}{5F9EA0}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  urlcolor=link_color!70!black
+}
 
 
 \pagestyle{fancy}
@@ -93,17 +99,15 @@
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
-\section{\color{Mahogany}Experience}
+\section{\color{Mahogany}Work Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {University of Waterloo}{Waterloo, ON}
+      {University of Waterloo{\normalfont , Department of Computer Science}}{Waterloo, ON}
       {Research Assistant}{Sep 2020 - Dec 2021}
       \resumeItemListStart
         \resumeItem{Tensorflow}
           {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -120,7 +124,7 @@
 
 
 %-----------PROJECTS-----------------
-\section{\color{NavyBlue}Projects}
+\section{\color{Mahogany}Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{QuantSoftware Toolkit}
       {Open source python library for financial data analysis and machine learning for finance.}
@@ -134,7 +138,7 @@
 
 %
 %--------PROGRAMMING SKILLS------------
-\section{\color{NavyBlue}Technical Skills}
+\section{\color{Mahogany}Technical Skills}
  \resumeSubHeadingListStart
    \item{
      {Python, C++, Bash, SQL, Docker, MySQL, Unix/Linux environments, Git}
@@ -146,10 +150,16 @@
 
 
 %-------------------------------------------
-\section{\color{NavyBlue}Publications}
+\section{\color{Mahogany}Publications}
  \resumeSubHeadingListStart
  \item{\href{https://patentimages.storage.googleapis.com/a2/38/c3/7013ac293ff7c3/US20210288755A1.pdf}{\textbf{US Patent:} Channel disruption wireless communication system.}}
  \vspace{-3mm}
- \item{\textbf{Verification: can wifi backscatter replace RFID?} ACM MobiCom 2021 (Acceptance rate: 17.4\%)}
+ \item{\href{https://cs.uwaterloo.ca/~brecht/papers/wifi-vs-rfid-mobicom-2021.pdf}{\textbf{Verification: Can WiFi Backscatter Replace RFID?}}  ACM MobiCom 2021 (Acceptance rate: 17\%)
+ \vspace{-3mm}
+ \item{
+    \href{http://web.cs.ucla.edu/~omid/Papers/Sigcomm20.pdf}{
+        \textbf{WiTAG: Seamless WiFi Backscater Communication}}, ACM SIGCOMM'20 (Acceptance rate: 21\%
+    }
+ }
   \resumeSubHeadingListEnd
 \end{document}
