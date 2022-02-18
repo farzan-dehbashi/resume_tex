@@ -14,7 +14,7 @@
 \fontfamily{Georgia}
 \usepackage{fontawesome5}
 \usepackage{xcolor}
-\definecolor{link_color}{HTML}{5F9EA0}
+\definecolor{link_color}{HTML}{9F8170}
 \hypersetup{
   colorlinks=true,
   linkcolor=blue!50!red,
@@ -50,7 +50,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{ #2 \vspace{-2pt}}
   }
 }
 
@@ -79,13 +79,14 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\huge {\color{Mahogany}{Farzan Dehbashi}}} & Email : \href{mailto:farzan.dehbashi95@gmail.com}{farzan.dehbashi95@gmail.com}\\ Email : \href{mailto:farzan.dehbashi95@gmail.com}{farzan.dehbashi95@gmail.com} \\
+  \textbf{\huge {\color{Mahogany}{Farzan Dehbashi}}} \vspace{1mm} \\ \textbf{ \color{Mahogany} Software Engineer} &Email : \href{mailto:farzan.dehbashi95@gmail.com}{farzan.dehbashi95@gmail.com}\\ 
   
-  \faGithub \href{https://github.com/farzan-dehbashi}{ Github} | \faGraduationCap \href{}{ Google Scholar} | \faLinkedin \href{}{ Linkdin}& \faIcon[solid]{phone-square-alt} +1-519-589-1234  \\
+   \href{ https://github.com/farzan-dehbashi}{\faGithub \, Github} | \href{https://scholar.google.com/citations?hl=en&user=iWgKz8YAAAAJ}{ \faGraduationCap \, Google Scholar} |  \href{https://www.linkedin.com/in/farzandb}{\faLinkedin \, Linkedin} & \faIcon[solid]{phone-square-alt} +1-519-589-1234  \\
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
+\vspace{-3mm}
 \section{\color{Mahogany}Education}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -94,72 +95,107 @@
 
       
     \resumeSubheading
-      {Amirkabir University of Technology}{Tehran, Iran}
-      {Bachelor of Computer Engineering;  GPA: 3.40/4.0 (9.15/10.0)}{Sep. 2013 -- Sep. 2018}
+      {Amirkabir University of Technology}{Tehran, Iran} 
+      {Bachelor of Computer Engineering;  GPA: 3.4/4.0}{Sep. 2013 -- Sep. 2018} \\ \vspace{2mm} \scriptsize{Courses: Algorithms, Data Structure, Software engineering, Advanced Programming, Web Development, Operating Systems}
+      
   \resumeSubHeadingListEnd
-
+  
+ \vspace{-8mm} 
 %-----------EXPERIENCE-----------------
 \section{\color{Mahogany}Work Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {University of Waterloo{\normalfont , Department of Computer Science}}{Waterloo, ON}
-      {Research Assistant}{Sep 2020 - Dec 2021}
+      {Research Assistant I}{Sep 2020 - Dec 2021}
       \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
+        \resumeItem{}
+          {Design and implementation of an RFID reader software to automate data collection, visualization, and analysis using Python (Pandas, Sllurp, Matplotlib, Seaborn) and Bash}
+         \resumeItem{}
+          {Worked closely with 3 professors from UCLA and University of Waterloo for designing and prototyping of a new touch sensing device using RFID with 9$\times$ lower cost and 2.4$\times$ range improvement. Capable of detecting user gesture by 98.6 \% accuracy. Collected, visualized and analyzed a dataset of 700K+ samples using Python.}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
+      
+      \resumeSubheading
+      {University of Waterloo{\normalfont , Department of Computer Science}}{Waterloo, ON}
+      {Graduate Research Assistant}{Sep 2018 - Sep 2020}
       \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
+        \resumeItem{}
+          {Prototyping and implementation of an IoT Embedded system with 3$\times$ less power consumption and battery-life, 60\% lower cost per unit and simpler design; using Python, C running on Google Home WiFi routers. Also, securing a US Patent based on this design. For more details, refer to my WiTAG paper.}
+          \resumeItem{}
+          {Prototyping and implementation and testing of a drowning detection software, which leverages RFID signal. Using Python (Pandas, Sllurp, Numpy, Matplotlib)
+          }
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------------
-\section{\color{Mahogany}Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-%     \resumeSubItem{Mac Setup}
-%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
-  \resumeSubHeadingListEnd
-
-%
+  
+ \vspace{-8mm}
 %--------PROGRAMMING SKILLS------------
 \section{\color{Mahogany}Technical Skills}
- \resumeSubHeadingListStart
-   \item{
-     {Python, C++, Bash, SQL, Docker, MySQL, Unix/Linux environments, Git}
-    %  \hfill
-    %  \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-   }
-   \item{Exposure: C, Java, }
- \resumeSubHeadingListEnd
+%  \resumeSubHeadingListStart
+%   \item{
+     {\textbf{Python} (Numpy, Pandas, Matplotlib, Seaborn, Pytorch(familiar), OpenCV(familiar), Pygame), \textbf{C++}, Docker, \textbf{SQL}(MySQL), \textbf{Bash}, Git, HTML/CSS, C(familiar), Java(familiar), Unix/Linux environment}
+%   }
+%   \item{Exposure: C, Java, }
+%  \resumeSubHeadingListEnd
+ 
+\vspace{-4mm}
+%-----------PROJECTS-----------------
+\section{\color{Mahogany}Open-source Projects}
+  \resumeSubHeadingListStart
+    % \item{Tetris game}
+    %   {React}
+     \item{\textbf{ \href{https://github.com/farzan-dehbashi/Whatsapp}{ Whatsapp  \faGithub \, :}}} 
+     Design and implementation of a messenger app that enables multiple users to send messages, images, files and follow each other; implemented the server, client, and network connection using Python based on object-oriented design. 
+     \vspace{-2mm}
+     \item{\href{https://github.com/farzan-dehbashi/snake_game}{\textbf{Snake game \faGithub \, :}}}
+     Implementation of a Nokia Snake Game by python using \textbf{Pygame} library, which is shipped using either a \textbf{Docker} container or an executable file.
+     \vspace{-2mm}
+    \item{\href{https://github.com/farzan-dehbashi/WiFi-Backscattery-simulator/blob/master/README.md}{\textbf{ WiFi packet simulator \faGithub \, :}} A multi-modal WiFi backscatter packet simulator to assess probability of successful transmission in noisy environment using Python; capable of estimation by 96\%+ accuracy compared to real-world scenarios.}
+     
+    
+    % \resumeSubItem{Github Visualization}
+    %   {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+   
+  \resumeSubHeadingListEnd
+
+ 
 
 
+\vspace{-8mm}
 %-------------------------------------------
 \section{\color{Mahogany}Publications}
  \resumeSubHeadingListStart
- \item{\href{https://patentimages.storage.googleapis.com/a2/38/c3/7013ac293ff7c3/US20210288755A1.pdf}{\textbf{US Patent:} Channel disruption wireless communication system.}}
- \vspace{-3mm}
- \item{\href{https://cs.uwaterloo.ca/~brecht/papers/wifi-vs-rfid-mobicom-2021.pdf}{\textbf{Verification: Can WiFi Backscatter Replace RFID?}}  ACM MobiCom 2021 (Acceptance rate: 17\%)
- \vspace{-3mm}
+ \item{\href{https://patentimages.storage.googleapis.com/a2/38/c3/7013ac293ff7c3/US20210288755A1.pdf}{\textbf{US Patent:} Channel disruption wireless communication system}}
+ \vspace{-2mm}
+ \item{\href{https://cs.uwaterloo.ca/~brecht/papers/wifi-vs-rfid-mobicom-2021.pdf}{\textbf{Verification: Can WiFi Backscatter Replace RFID?}}  \small{ACM MobiCom 2021 (Acceptance rate: 17\%)}
+ \vspace{-2mm}
  \item{
     \href{http://web.cs.ucla.edu/~omid/Papers/Sigcomm20.pdf}{
-        \textbf{WiTAG: Seamless WiFi Backscater Communication}}, ACM SIGCOMM'20 (Acceptance rate: 21\%
+        \textbf{WiTAG: Seamless WiFi Backscater Communication}}\small{, ACM SIGCOMM 2020 (Acceptance rate: 21\%)}
+    }
+ \vspace{-2mm}  
+ \item{
+    \href{https://www.researchgate.net/profile/Farzan-Dehbashi/publication/335186643_SwimTrack_Drowning_Detection_using_RFID/links/5ee0fa8f299bf13a8910118f/SwimTrack-Drowning-Detection-using-RFID.pdf}{
+        \textbf{SwimTrack: Drowning Detection using RFID}} \small{, ACM SIGCOMM 2019 (Acceptance rate:  14\%)}
     }
  }
   \resumeSubHeadingListEnd
+ 
+\vspace{-8mm}
+ %-------------------------------------------
+\section{\color{Mahogany}Certificates}
+ \resumeSubHeadingListStart
+    \item \href{https://github.com/farzan-dehbashi/web_page/blob/main/certificates/python.pdf}{Python Programming Masterclass \footnotesize{- Udemy}}
+    \vspace{-4mm}
+    \item \href{https://github.com/farzan-dehbashi/web_page/blob/main/certificates/SQL.pdf}{MySQL Bootcamp \footnotesize{- Udemy}}
+    \vspace{-4mm}
+    \item \href{https://github.com/farzan-dehbashi/web_page/blob/main/certificates/bash.pdf}{Complete Linux Bash Shell Scripting \footnotesize{- Udemy}}
+    \vspace{-4mm}
+    \item{\href{https://github.com/farzan-dehbashi/web_page/blob/main/certificates/docker.pdf}{Docker Mastery \footnotesize{- Udemy}}}
+  \resumeSubHeadingListEnd
+
+\vspace{-8mm}
+ %-------------------------------------------
+% \section{\color{Mahogany}Hobbies}
+% Photography, camping, travel
 \end{document}
